@@ -105,8 +105,12 @@ nav ul li a:hover::after{
 
 }
 .about-col-2 {
-    flex-basis: 60%;
-
+    flex-basis: 60%; 
+    
+        margin: auto;
+        text-align: justify;
+        text-justify: inter-word;
+    
 
 }
 
@@ -118,11 +122,7 @@ nav ul li a:hover::after{
     
 }
 
-.about-col-2 {
-    margin-right: auto;
-    text-align: justify;
-    text-justify: inter-word;
-}
+
 
 .tab-titles {
     display: flex;
@@ -132,7 +132,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -154,14 +154,13 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-    font-size: 24px;
-    margin-top: 20px;
+    
 
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 28px;
-    margin-top: 15px;
+    font-size: 20px;
+    
     
     
 }
@@ -184,7 +183,7 @@ nav ul li a:hover::after{
 }
 .sub-title{
     margin-bottom: 80px;
-    margin-left: 100px;
+    margin-left: auto;
 }
 .services-list {
 
@@ -233,7 +232,9 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 30px 0; ;
 }
-
+.sub-title{
+    margin-left: 100px;
+}
 .work-list{
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
@@ -285,6 +286,7 @@ nav ul li a:hover::after{
     height: 50px;
     border-radius: 50%;
     text-align: center;
+    
 }
 .work:hover img{
     transform: scale(1.1);
@@ -387,8 +389,11 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px) {
     #header {
-        width: 120%;
+
+        
         background-image: url('images/Untitled design (1).jpg');
+        
+
       
     }
     .header-text{
@@ -430,6 +435,7 @@ nav .fa-solid{
 
     .sub-title{
         font-size: 40px;
+        text-align: center;
         
     }
     .about-col-1, .about-col-2{
@@ -437,32 +443,36 @@ nav .fa-solid{
     }
     .about-col-1 {
         margin-bottom: 30px;
+        margin-left: -50px;
+        
     }
     .about-col-2{
         font-size: 14px;
-        margin-left: 20px;
+        margin: 10px;     
+          
         
     }
+    
     .sub-title1 {
         
         margin-right: 0;
         
     }
 
-    .tab-links{
-        font-size: 24px;
-        margin-left: 20px;
-    }
+    
     
 
     .work-list {
+        
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Minimum column width set to 200px */
         grid-gap: 20px; /* Adjusted spacing for smaller screens */
         margin-top: 50px;
         margin: 100px;
+        
     }
     .work img {
+        
         width: 100%; /* Ensures the image scales to fill the grid cell */
         height: auto; /* Maintains aspect ratio */
         object-fit: cover; /* Crops the image to fit within its container */
@@ -486,6 +496,7 @@ nav .fa-solid{
         font-size: 12px;
     }
     .contact-left, .contact-right{
+        margin-left: 50px;
         flex-basis: 100%;
     }
     .sub-title{
@@ -494,6 +505,13 @@ nav .fa-solid{
     .copyright {
         font-size: 14px;
     }
+    .services-list{
+        margin: 10px;
+    }
+    .contact-left .sub-title {
+        margin-right: 50px;
+    }
+    
     
 
     
