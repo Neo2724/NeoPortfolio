@@ -125,6 +125,14 @@ nav ul li a:hover::after{
     
     
 }
+.tab-contents {
+    display: none;
+    min-height: 300px; /* Adjust based on your tallest tab content */
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
 
 
 
